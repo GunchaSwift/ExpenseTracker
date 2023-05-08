@@ -19,6 +19,8 @@
 		53027CBE2A0928F500A93D8A /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53027CBD2A0928F500A93D8A /* PreviewData.swift */; };
 		53027CC02A092AB900A93D8A /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53027CBF2A092AB900A93D8A /* TransactionRow.swift */; };
 		53027CC32A09604100A93D8A /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 53027CC22A09604100A93D8A /* SwiftUIFontIcon */; };
+		53027CC52A09623200A93D8A /* TransactionListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53027CC42A09623200A93D8A /* TransactionListVM.swift */; };
+		53027CC72A0967BE00A93D8A /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53027CC62A0967BE00A93D8A /* RecentTransactionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		53027CBB2A0926E500A93D8A /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		53027CBD2A0928F500A93D8A /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		53027CBF2A092AB900A93D8A /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		53027CC42A09623200A93D8A /* TransactionListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListVM.swift; sourceTree = "<group>"; };
+		53027CC62A0967BE00A93D8A /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +110,11 @@
 			children = (
 				53027C8F2A091F2800A93D8A /* ExpenseTrackerApp.swift */,
 				53027C912A091F2800A93D8A /* ContentView.swift */,
-				53027CB92A09210900A93D8A /* Extensions.swift */,
+				53027CC62A0967BE00A93D8A /* RecentTransactionList.swift */,
 				53027CBF2A092AB900A93D8A /* TransactionRow.swift */,
+				53027CC42A09623200A93D8A /* TransactionListVM.swift */,
 				53027CBB2A0926E500A93D8A /* TransactionModel.swift */,
+				53027CB92A09210900A93D8A /* Extensions.swift */,
 				53027C932A091F2900A93D8A /* Assets.xcassets */,
 				53027C952A091F2900A93D8A /* Preview Content */,
 			);
@@ -278,10 +284,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				53027CBE2A0928F500A93D8A /* PreviewData.swift in Sources */,
+				53027CC72A0967BE00A93D8A /* RecentTransactionList.swift in Sources */,
 				53027CBC2A0926E500A93D8A /* TransactionModel.swift in Sources */,
 				53027C922A091F2800A93D8A /* ContentView.swift in Sources */,
 				53027CC02A092AB900A93D8A /* TransactionRow.swift in Sources */,
 				53027CBA2A09210900A93D8A /* Extensions.swift in Sources */,
+				53027CC52A09623200A93D8A /* TransactionListVM.swift in Sources */,
 				53027C902A091F2800A93D8A /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
