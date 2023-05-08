@@ -14,6 +14,7 @@
 		53027CA12A091F2900A93D8A /* ExpenseTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53027CA02A091F2900A93D8A /* ExpenseTrackerTests.swift */; };
 		53027CAB2A091F2900A93D8A /* ExpenseTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53027CAA2A091F2900A93D8A /* ExpenseTrackerUITests.swift */; };
 		53027CAD2A091F2900A93D8A /* ExpenseTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53027CAC2A091F2900A93D8A /* ExpenseTrackerUITestsLaunchTests.swift */; };
+		53027CBA2A09210900A93D8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53027CB92A09210900A93D8A /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		53027CA62A091F2900A93D8A /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53027CAA2A091F2900A93D8A /* ExpenseTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITests.swift; sourceTree = "<group>"; };
 		53027CAC2A091F2900A93D8A /* ExpenseTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53027CB92A09210900A93D8A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				53027C912A091F2800A93D8A /* ContentView.swift */,
 				53027C932A091F2900A93D8A /* Assets.xcassets */,
 				53027C952A091F2900A93D8A /* Preview Content */,
+				53027CB92A09210900A93D8A /* Extensions.swift */,
 			);
 			path = ExpenseTracker;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53027C922A091F2800A93D8A /* ContentView.swift in Sources */,
+				53027CBA2A09210900A93D8A /* Extensions.swift in Sources */,
 				53027C902A091F2800A93D8A /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
