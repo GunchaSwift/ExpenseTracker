@@ -35,8 +35,14 @@ struct Transaction: Identifiable, Decodable, Hashable {
         date.dateParsed()
     }
     
+    // Return minus sign before transaction if it's credit
     var signedAmount: Double {
         return type == TransactionType.credit.rawValue ? amount : -amount
+    }
+    
+    // Get month name & year from date
+    var month: String {
+        dateParsed.formatted(.dateTime.year().month(.wide))
     }
 }
 

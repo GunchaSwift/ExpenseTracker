@@ -35,6 +35,8 @@ struct ContentView: View {
             }
         }
         .navigationViewStyle(.stack)
+        // Edit back button's color (you can use custom colors as well)
+        .tint(.primary)
     }
 }
 
