@@ -23,6 +23,7 @@
 		53027CC72A0967BE00A93D8A /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53027CC62A0967BE00A93D8A /* RecentTransactionList.swift */; };
 		53CE7DCF2A0ACB8900E08F7B /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CE7DCE2A0ACB8900E08F7B /* TransactionList.swift */; };
 		53CE7DD22A0B850500E08F7B /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 53CE7DD12A0B850500E08F7B /* Collections */; };
+		53CE7DD52A0B8DBB00E08F7B /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 53CE7DD42A0B8DBB00E08F7B /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CE7DD52A0B8DBB00E08F7B /* SwiftUICharts in Frameworks */,
 				53CE7DD22A0B850500E08F7B /* Collections in Frameworks */,
 				53027CC32A09604100A93D8A /* SwiftUIFontIcon in Frameworks */,
 			);
@@ -171,6 +173,7 @@
 			packageProductDependencies = (
 				53027CC22A09604100A93D8A /* SwiftUIFontIcon */,
 				53CE7DD12A0B850500E08F7B /* Collections */,
+				53CE7DD42A0B8DBB00E08F7B /* SwiftUICharts */,
 			);
 			productName = ExpenseTracker;
 			productReference = 53027C8C2A091F2800A93D8A /* ExpenseTracker.app */;
@@ -247,6 +250,7 @@
 			packageReferences = (
 				53027CC12A09604100A93D8A /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
 				53CE7DD02A0B850500E08F7B /* XCRemoteSwiftPackageReference "swift-collections" */,
+				53CE7DD32A0B8DBB00E08F7B /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 53027C8D2A091F2800A93D8A /* Products */;
 			projectDirPath = "";
@@ -385,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -439,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -641,6 +645,14 @@
 				minimumVersion = 1.0.4;
 			};
 		};
+		53CE7DD32A0B8DBB00E08F7B /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -653,6 +665,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 53CE7DD02A0B850500E08F7B /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = Collections;
+		};
+		53CE7DD42A0B8DBB00E08F7B /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53CE7DD32A0B8DBB00E08F7B /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

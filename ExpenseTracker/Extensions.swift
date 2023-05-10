@@ -17,9 +17,9 @@ extension Color {
 
 extension DateFormatter {
     // Lazy function, makes sure we initialize DateFormatter only once, static makes sure there is only one instance of it.
-    static let normalNumericEU: DateFormatter = {
+    static let allNumericUSA: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
+        formatter.dateFormat = "MM/dd/yyyy"
         
         return formatter
     }()
@@ -28,8 +28,20 @@ extension DateFormatter {
 extension String {
     // Parse date
     func dateParsed() -> Date {
-        guard let parsedDate = DateFormatter.normalNumericEU.date(from: self) else { return Date() }
+        guard let parsedDate = DateFormatter.allNumericUSA.date(from: self) else { return Date() }
         
         return parsedDate
+    }
+}
+
+extension Date {
+    func formatted() -> String {
+        return self.formatted(.dateTime.year().month().day())
+    }
+}
+
+extension Double {
+    func roundToTwoDigits() -> Double {
+        return (self * 100).rounded() / 100
     }
 }
